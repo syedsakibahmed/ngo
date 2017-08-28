@@ -4,15 +4,13 @@
 @font-face {
   font-family: 'Open Sans';
   font-weight: normal;
-  /*src: url(../fonts/open-sans/OpenSans-Regular.ttf);*/
-  src: url(https://github.com/syedsakibahmed/ngo/blob/master/fonts/open-sans/OpenSans-Regular.ttf);
+  src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-family: 'Open Sans';
   font-weight: bold;
-  src: url(https://github.com/syedsakibahmed/ngo/blob/master/fonts/open-sans/OpenSans-Bold.ttf);	
-  /*src: url(../fonts/open-sans/OpenSans-bold.ttf);*/
+  src: url(../fonts/open-sans/OpenSans-bold.ttf);
 }
 
 /*=================================*/
