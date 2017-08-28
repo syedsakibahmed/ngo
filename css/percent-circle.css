@@ -1,0 +1,81 @@
+.percent-circle *,
+.percent-circle::before,
+.percent-circle::after {
+  box-sizing: content-box;
+}
+
+.percent-circle {
+  position: relative;
+  display: inline-block;
+  font-size: 140px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 0 .1em .1em 0;
+  background-color: #ccc;
+}
+
+.percent-circle::after {
+  position: absolute;
+  top: .08em;
+  left: .08em;
+  display: block;
+  content: " ";
+  border-radius: 50%;
+  background-color: #fff;
+  width: .84em;
+  height: .84em;
+  transition: transform ease-in-out 300ms;
+}
+
+.percent-circle:hover::after {
+  transform: scale(1.09);
+}
+
+.percent-circle:hover span {
+  font-size: .25em;
+  height: 1.2em;
+}
+
+.percent-circle span {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 50%;
+  height: 1em;
+  font-size: .2em;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  transition: all ease-in-out 300ms;
+}
+
+.percent-slice {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  clip: rect(0,1em,1em,.5em);
+  border-color: #307bbb;
+}
+
+.percent-fill {
+  position: absolute;
+  border: .08em solid transparent;
+  width: .84em;
+  height: .84em;
+  clip: rect(0, 1em, 1em, 0.5em);
+  border-radius: 50%;
+}
+
+.percent-bar {
+  position: absolute;
+  border: .08em solid;
+  border-color: inherit;
+  width: .84em;
+  height: .84em;
+  clip: rect(0,.5em,1em,0);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: transform ease-in-out 300ms;
+}
