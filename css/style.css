@@ -418,7 +418,7 @@ ul.card-thumbnill-links {
 ul.card-thumbnill-links li {
   list-style: none;
   flex-grow: 1;
-  border-right: 1px solid #fff6;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 ul.card-thumbnill-links li:last-child {
   border: none;
@@ -429,7 +429,7 @@ ul.card-thumbnill-links li a {
   font-size: 20px;
   text-align: center;
   padding: 15px 15px;
-  background-color: #243182cc;
+  background-color: rgba(36, 49, 130, 0.7);
   transition: all ease-in-out 300ms;
 }
 
